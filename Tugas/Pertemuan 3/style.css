@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #b71c1c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+nav {
+    background-color: #c62828;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 14px 20px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #e53935;
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+.content {
+    flex: 3;
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.content h2 {
+    margin-top: 0;
+}
+
+.content form {
+    margin-top: 10px;
+}
+
+.content form table {
+    width: 100%;
+}
+
+.content form table input, .content form table select, .content form table textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.content form button {
+    background-color: #1e88e5;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.content form button:hover {
+    background-color: #1565c0;
+}
+
+.sidebar {
+   flex: 1;
+   padding: 20px;
+   background-color: #BDC3C7;
+   border-radius: 10px;
+   margin-left: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #c62828;
+    color: white;
+    margin-top: 20px;
+    border-radius: 0 0 8px 8px;
+}
