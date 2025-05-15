@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard PBW - Najwa</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet"/>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    :root {
+      --abu: #e0e0e0;
+      --abu-gelap: #888;
+      --biru-muda: #cce7f6;
+      --coksu: #e9d5b5;
+      --putih: #ffffff;
+      --shadow: rgba(0, 0, 0, 0.05);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(135deg, var(--abu), var(--biru-muda));
+      padding: 40px 20px;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 10px;
+      font-size: 2.2rem;
+    }
+
+    p {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 1.1rem;
+      color: var(--abu-gelap);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: var(--putih);
+      border-radius: 20px;
+      padding: 25px;
+      box-shadow: 0 10px 30px var(--shadow);
+      transition: all 0.3s ease-in-out;
+      border-left: 6px solid var(--coksu);
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h2 {
+      color: #444;
+      margin-bottom: 15px;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-bottom: 1px solid var(--abu);
+      padding-bottom: 5px;
+    }
+
+    .links {
+      list-style: none;
+      padding: 0;
+    }
+
+    .links li {
+      margin-bottom: 10px;
+    }
+
+    .links a {
+      text-decoration: none;
+      background-color: var(--biru-muda);
+      color: #333;
+      padding: 10px 16px;
+      border-radius: 12px;
+      display: inline-block;
+      transition: all 0.3s ease;
+      font-weight: 600;
+    }
+
+    .links a:hover {
+      background-color: #b5d9eb;
+      transform: translateY(-2px);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #555;
+      opacity: 0.7;
+    }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      .card h2 {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1><i class="fas fa-chalkboard-teacher"></i> Dashboard PBW</h1>
+  <p>Nama: Najwa Latifah</p>
+
+  <div class="grid">
+    <div class="card">
+      <h2><i class="fas fa-code"></i> Praktikum 1</h2>
+      <ul class="links">
+        <li><a href="Praktikum/Peremuan 1/LatihanPBW1.html"><i class="far fa-file-code"></i> Pertemuan 1 (HTML)</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><i class="fas fa-code"></i> Praktikum 2</h2>
+      <ul class="links">
+        <li><a href="Praktikum/Pertemuan 2/Form Pendaftaran.html"><i class="far fa-file-code"></i> Pertemuan 2 (HTML)</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><i class="fas fa-paint-brush"></i> Praktikum 3</h2>
+      <ul class="links">
+        <li><a href="Praktikum/Pertemuan 3/html-css.html"><i class="far fa-file-code"></i> Pertemuan 3 (HTML)</a></li>
+        <li><a href="Praktikum/Pertemuan 3/style.css"><i class="fab fa-css3-alt"></i> Pertemuan 3 (CSS)</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><i class="fas fa-laptop-code"></i> Praktikum 5</h2>
+      <ul class="links">
+        <li><a href="Praktikum/Pertemuan 5/index.html"><i class="far fa-file-code"></i> Pertemuan 5 (HTML)</a></li>
+        <li><a href="Praktikum/Pertemuan 5/main.js"><i class="fab fa-js-square"></i> Pertemuan 5 (JS)</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><i class="fas fa-user"></i> Tugas 1</h2>
+      <ul class="links">
+        <li><a href="Tugas/Pertemuan 1/CV Najwa Latifah.html"><i class="far fa-id-card"></i> CV Najwa (HTML)</a></li>
+        <li><a href="Tugas/Pertemuan 1/FotoCVNajwa.png"><i class="far fa-image"></i> Foto (png)</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><i class="fas fa-edit"></i> Tugas 2</h2>
+      <ul class="links">
+        <li><a href="Tugas/Pertemuan 2/Form Pendaftaran.html"><i class="far fa-file-code"></i> Form (HTML)</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><i class="fas fa-globe"></i> Tugas 3</h2>
+      <ul class="links">
+        <li><a href="Tugas/Pertemuan 3/Website Sederhana.html"><i class="far fa-window-maximize"></i> Website (HTML)</a></li>
+        <li><a href="Tugas/Pertemuan 3/style.css"><i class="fab fa-css3-alt"></i> CSS</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><i class="fas fa-laptop-code"></i> Tugas 5</h2>
+      <ul class="links">
+        <li><a href="Tugas/Pertemuan 5/index.html"><i class="far fa-file-code"></i> Kalkulator Nilai (HTML)</a></li>
+        <li><a href="Tugas/Pertemuan 5/main.js"><i class="fab fa-js-square"></i> JS</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>&copy; 2025 Najwa Latifah - UTS PBW</footer>
+</body>
+</html>
