@@ -19,7 +19,7 @@
 
 <form method="post">
     <label for="barang">Pilih Nama Barang:</label>
-    <select name="barang" required>
+    <select name="barang" id="barang" required>
         <option value="">-- Pilih Barang --</option>
         <option value="Keyboard">Keyboard</option>
         <option value="Mouse">Mouse</option>
@@ -29,7 +29,7 @@
     </select><br><br>
 
     <label for="jumlah">Jumlah Beli:</label>
-    <input type="number" name="jumlah" min="1" required><br><br>
+    <input type="number" name="jumlah" id="jumlah" min="1" required><br><br>
 
     <button type="submit">Hitung</button>
 </form>
