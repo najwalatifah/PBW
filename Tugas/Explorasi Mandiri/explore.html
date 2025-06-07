@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorasi Mandiri</title>
+</head>
+
+<style>
+    body{
+        margin: 0;
+        background-color: #f5e6ca;
+    }
+
+    .title-div {
+        text-align: center;
+    }
+
+    .items-div{
+        display: flex; /*Mengubah items-div menjadi flex container*/
+        justify-content: space-evenly; /*Menyebarkan item secara merata dengan jarak yang sama.*/
+        flex-wrap: wrap; /*Memungkinkan item berpindah ke baris baru jika tidak cukup ruang.*/
+    }
+
+    .item{
+        width: 30%;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .blue{
+        background-color: #343f56;
+    }
+
+    .brown{
+        background-color: #b2957e;
+    }
+    
+    /*Media Query*/
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) { 
+        .item {
+            width: 90%;
+        }
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+        .item {
+            width: 45%;
+        }
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+        .item {
+            width: 30%;
+        }
+    }
+
+</style>
+
+<body>
+    <div class="product-div">
+        <div class="title-div">
+            <h2>Contoh</h2>
+        </div> 
+        <div class="items-div">
+            <div class="item blue"></div>
+            <div class="item brown"></div>
+            <div class="item blue"></div>
+            <div class="item brown"></div>
+            <div class="item blue"></div>
+            <div class="item brown"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,5 +1,5 @@
 <?php
-$jumlahRoda = 4;
+$jumlahRoda = 8;
 
 echo "<h2>Soal 1 - Jenis Kendaraan</h2>";
 echo "Jumlah roda: $jumlahRoda<br>";

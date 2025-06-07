@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Pertemuan 7</title>
+        <title>Pertemuan 11</title>
 </head>
 <body>
     <?php
@@ -12,7 +12,7 @@
     $umur = 17;
     $status = ($umur >= 17)? "Dewasa" : "Anak-anak";
 
-    // echo $status;
+    echo $status;
 
     // $mahasiswa =[
     //     "10001" => "Andi",
