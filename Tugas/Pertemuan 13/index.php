@@ -11,7 +11,8 @@
    <?php include 'nav.php'; ?>
    <div class="container mt-4">
        <h2>Daftar Buku</h2>
-
+       <div class="mb-3">
+    <a href="pelanggan.php" class="btn btn-success">Kelola Pelanggan</a>
 
        <!-- Form Pencarian -->
        <form method="get" class="row g-3 mb-4">
@@ -55,6 +56,8 @@
                        <a href="form_edit.php?id=<?php echo $row['ID'] ?>" class="btn btn-sm btn-warning">Edit</a>
                        <a href="proses_hapus.php?id=<?php echo $row['ID'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Yakin ingin menghapus?')">Hapus</a>
                    </td>
+                   </td>
+               </tr>
                </tr>
                <?php endwhile; ?>
            </tbody>

@@ -19,6 +19,26 @@
        }
 
 
+    if (isset($_GET['id']) && is_numeric($_GET['id'])) {
+        $id = $_GET['id'];
+
+        // Siapkan query DELETE dengan prepared statement
+        $stmt = $conn->prepare("DELETE FROM pelanggan WHERE ID = ?");
+        $stmt->bind_param("i", $id);
+
+        // Eksekusi dan tangani hasilnya
+        if ($stmt->execute()) {
+            echo "<script>alert('Data pelanggan berhasil dihapus'); window.location='pelanggan.php';</script>";
+        } else {
+            echo "<script>alert('Gagal menghapus data: " . addslashes($stmt->error) . "'); window.location='pelanggan.php';</script>";
+        }
+
+        $stmt->close();
+    } else {
+        echo "<script>alert('ID tidak valid'); window.location='pelanggan.php';</script>";
+    }
+
+
        // Tutup statement
        $stmt->close();
    } else {
