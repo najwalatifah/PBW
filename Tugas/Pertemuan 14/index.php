@@ -18,8 +18,6 @@
    <?php include 'nav.php'; ?>
    <div class="container mt-4">
        <h2>Daftar Buku</h2>
-       <div class="mb-3">
-    <a href="pelanggan.php" class="btn btn-success">Kelola Pelanggan</a>
 
        <!-- Form Pencarian -->
        <form method="get" class="row g-3 mb-4">

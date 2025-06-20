@@ -22,6 +22,12 @@
                    <li class="nav-item">
                        <a class="nav-link" href="tambah_pelanggan.php">Tambah Pelanggan</a>
                    </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="pelanggan.php">Kelola Pelanggan</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="logout.php">Logout</a>
+                   </li>  
                </ul>
            </div>
        </div>

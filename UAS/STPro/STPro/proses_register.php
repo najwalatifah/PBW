@@ -1,10 +1,10 @@
 <?php
 session_start(); // Mulai session
 
-include 'koneksi.php'; // Sertakan file koneksi database, menghubungkan ke db toko_produk tabel users
+include 'koneksi.php'; // Sertakan file koneksi database
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $username = $_POST['username']; 
+    $username = $_POST['username'];
     $password = $_POST['password'];
     $confirm_password = $_POST['confirm_password'];
 
@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     mysqli_stmt_store_result($stmt_check);
 
     if (mysqli_stmt_num_rows($stmt_check) > 0) {
-        $_SESSION['error_message'] = "Username sudah terdaftar. Silahkan gunakan username lain.";
+        $_SESSION['error_message'] = "Username sudah terdaftar. Silakan gunakan username lain.";
         header("Location: register.php");
         exit();
     }

@@ -5,7 +5,7 @@ session_start();
 $message = '';
 $message_type = ''; // 'success' atau 'danger'
 
-if (isset($_SESSION['success_message'])) { //(isset($_SESSION))
+if (isset($_SESSION['success_message'])) {
     $message = $_SESSION['success_message'];
     $message_type = 'success';
     unset($_SESSION['success_message']);
@@ -52,27 +52,27 @@ if (isset($_SESSION['success_message'])) { //(isset($_SESSION))
 
               <form class="pt-3" action="proses_register.php" method="POST">
                 <div class="form-group">
-                  <input type="text" class="form-control form-control-lg" id="username" name="username" placeholder="Username" required> <!--Masukkan Username-->
+                  <input type="text" class="form-control form-control-lg" id="username" name="username" placeholder="Username" required>
                 </div>
                 <div class="form-group">
-                  <input type="password" class="form-control form-control-lg" id="password" name="password" placeholder="Password" required> <!--Masukkan Password-->
+                  <input type="password" class="form-control form-control-lg" id="password" name="password" placeholder="Password" required>
                 </div>
                 <div class="form-group">
-                  <input type="password" class="form-control form-control-lg" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required> <!--Masukkan password kembali untuk konfimasi password-->
+                  <input type="password" class="form-control form-control-lg" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required>
                 </div>
                 <div class="mb-4">
                   <div class="form-check">
                     <label class="form-check-label text-muted">
-                      <input type="checkbox" class="form-check-input" required> <!--Checkbox persetujuan syarat ketentuan-->
+                      <input type="checkbox" class="form-check-input" required>
                       I agree to all Terms & Conditions
                     </label>
                   </div>
                 </div>
                 <div class="mt-3">
-                  <button type="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn">SIGN UP</button> <!--Button signup-->
+                  <button type="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn">SIGN UP</button>
                 </div>
                 <div class="text-center mt-4 fw-light">
-                  Already have an account? <a href="login.php" class="text-primary">Login</a> <!--link menuju login jika sudah punya akun-->
+                  Already have an account? <a href="login.php" class="text-primary">Login</a>
                 </div>
               </form>
             </div>
